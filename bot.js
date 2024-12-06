@@ -1,7 +1,7 @@
 
-var roomName = "Room Name";
+var roomName = "🌩️REAL SOCCER BOTLU MİS GİBİ⚽";
 var maxPlayers = 10;
-var roomPublic = false;
+var roomPublic = true;
 var playerName = "BOT";
 var noPlayer = false; //false = Bot İs invisible - true = Bot İs Visible (False Recomended)
 const geo = [
@@ -873,9 +873,9 @@ setInterval(() => {
 	for (i = 0; i < players.length; i++) {
 		if (players[i].position != null && kickOff == true) {
 			playersAfk[players[i].name]++;
-			if(playersAfk[players[i].name] == 4)
-				room.sendAnnouncement("❌ Hey " + players[i].name + ", İf You Dont Move You Will Get Kicked After 6 Seconds!", null, colors.red, "normal", 2);
-			else if(playersAfk[players[i].name] == 10)
+			if(playersAfk[players[i].name] == 20)
+				room.sendAnnouncement("❌ Hey " + players[i].name + ", İf You Dont Move You Will Get Kicked After 30 Seconds!", null, colors.red, "normal", 2);
+			else if(playersAfk[players[i].name] == 50)
 				room.kickPlayer(players[i].id, "💤 𝐀𝐅𝐊.", false);
 		}
 		else
